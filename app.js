@@ -1,3 +1,18 @@
+if (!localStorage.getItem('epilepsyConfirmation')) {
+  // Step 2: Show confirmation dialog
+  const userConfirmed = confirm("This application contains flashing lights which may potentially trigger seizures for people with photosensitive epilepsy. Do you confirm you don't have photosensitive epilepsy?");
+
+  if (userConfirmed) {
+    // Step 3: User confirmed, save flag in localStorage
+    localStorage.setItem('epilepsyConfirmation', 'true');
+    // Proceed with the application (the rest of your code)
+  } else {
+    // Step 4: User did not confirm, do not proceed
+    alert("You cannot use this application due to the risk of seizures.");
+    throw new Error("Application stopped due to epilepsy risk.");
+  }
+}
+
 const canvas = document.getElementById('visualizer');
 const canvasCtx = canvas.getContext('2d');
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();

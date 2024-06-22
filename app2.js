@@ -1,3 +1,15 @@
+if (!sessionStorage.getItem('epilepsyConfirmation')) {
+
+  const userConfirmed = confirm("This application contains flashing lights which may potentially trigger seizures for people with photosensitive epilepsy. Do you confirm you don't have photosensitive epilepsy?");
+
+  if (userConfirmed) {
+    sessionStorage.setItem('epilepsyConfirmation', 'true');
+  } else {
+    alert("You cannot use this application due to the risk of seizures.");
+    throw new Error("Application stopped due to epilepsy risk.");
+  }
+}
+
 const canvas = document.getElementById('visualizer');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
