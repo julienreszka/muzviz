@@ -4,7 +4,8 @@ Live music vizualization
 
 ## Features
 
-Allow users to give microphone access to the browser and visualize the sound in real time.
+- Allows users to give microphone access to the browser and visualize the sound in real time.
+- Allows users to open in fullscreen mode by clicking on the visualization.
 
 ## Usage
 
