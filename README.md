@@ -2,6 +2,8 @@
 
 Live music vizualization
 
+WARNING DO NOT USE IF YOU HAVE EPILEPSIA OR SIMILAR
+
 ## Features
 
 - Allows users to give microphone access to the browser and visualize the sound in real time.
@@ -13,6 +15,7 @@ Live music vizualization
 2. give microphone access to the browser
 3. enjoy the visualization
 
+WARNING DO NOT USE IF YOU HAVE EPILEPSIA OR SIMILAR
 
 
 https://github.com/julienreszka/muzviz/assets/8984570/09298800-2a20-40f6-af6a-6e6029dbd3c5
